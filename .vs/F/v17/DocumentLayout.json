@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\F\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\F\\login2ImgCont.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login2ImgCont.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\F\\login1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\F\\EstilosLogin2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EstilosLogin2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\F\\EstiloslosLogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EstiloslosLogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstilosLogin2.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\F\\EstilosLogin2.css",
+              "RelativeDocumentMoniker": "EstilosLogin2.css",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\EstilosLogin2.css",
+              "RelativeToolTip": "EstilosLogin2.css",
+              "ViewState": "AQIAAK0BAAAAAAAAAAAhwMgBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-08T16:54:46.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login2ImgCont.html",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\F\\login2ImgCont.html",
+              "RelativeDocumentMoniker": "login2ImgCont.html",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\login2ImgCont.html*",
+              "RelativeToolTip": "login2ImgCont.html*",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAuwKQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-08T16:54:46.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstiloslosLogin.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\F\\EstiloslosLogin.css",
+              "RelativeDocumentMoniker": "EstiloslosLogin.css",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\EstiloslosLogin.css",
+              "RelativeToolTip": "EstiloslosLogin.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-03T15:21:53.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login1.html",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\F\\login1.html",
+              "RelativeDocumentMoniker": "login1.html",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\login1.html",
+              "RelativeToolTip": "login1.html",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-03T15:18:52.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

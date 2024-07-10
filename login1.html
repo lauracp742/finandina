@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Usuario\Desktop\F\EstiloslosLogin.css">
+    <link rel="stylesheet" type="text/js" href="C:\Users\User\Desktop\F\login.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="Certifi">
+            <div class="sost">
+                <div class="ImagenIzquierda">
+                    <img class="imagenfondo" src="empresa_certificada3.png" alt="">
+                    <img class="imagenfondo" src="https://transacciones.bancofinandina.com/RS/images/account/onboarding/Login/banner_empresa-B.png" alt="">
+                    <div class="Banca_libre">
+                        <p class="textimg">Una banca libre <br><b>y sostenible</b></p>
+                    </div>
+                    <div class="Banca_libre_text">
+                        <div class="textbox_img">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div></div>
+                        <p class="textcerti">
+                            Disfruta la libertad financiera desde la comodidad de tu casa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ModalUserNom" class="ModalUserNom">
+            <div class="form">
+                <div class="boxform">
+                    <img class="icon" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_logos/banco-finandina.svg"
+                         alt="Icono finandina">
+                    <b>Inicia sesion</b>
+                    <div class="formLogin">
+                        <p> Completa los siguientes datos:</p>
+                        <div class="textbox">
+                            <!-- <img class="iconuser" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/user.svg" alt="">-->
+                            <input id="NomUser" class="NomUser" type="text" placeholder="Ingresa tu usurio">
+                        </div>
+                        <div class="ButtonForgotU">
+                            <a href="olvido_usuario.html" class="OTU">¿Olvidaste tu usuario?</a>
+                        </div>
+                        <div class="Go" id="Go">
+                            <a href="#" class="buttongo" id="buttongo" disabled>Continuar</a>
+                        </div>
+                        <div class="regist">
+                            <a href="#" class="registrarme">Registrarme ahora</a>
+                        </div>
+                    </div>
+                    <!--<div class="ButtonForgotP">
+                        <a href="#" class="OTC">¿Olvidaste tu contraseña?</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>//----------------------------------------------------------------FUNCIONES----------------------------------------------------
+
+    $(document).ready(function () {
+        // Función que se llama cada vez que cambia el valor del input
+        function checkInput() {
+            console.log('llega aqui');
+
+            if ($('#NomUser').val().trim() !== '') {
+                // Añadir la clase "active" si el input no está vacío
+                $('#Go').addClass('active');
+            } else {
+                // Quitar la clase "active" si el input está vacío
+                $('#Go').removeClass('active');
+            }
+        }
+        $('#NomUser').on('input', checkInput);
+        checkInput();
+
+        $('#buttongo').click(function () {
+            if ($('#NomUser').val() !== "laura2024") {
+                alert('Debe ingresar usuaruo "laura2024" ');
+            } else {
+                //modal.style.display = "none";
+                window.location.href = "login2ImgCont.html"; // Cambia la URL a donde quieras redirigir
+            }
+        });
+    });
+</script>
+
+</body>
+
+<!--<footer>
+    <p>this is the foother</p>
+</footer>-->
+</html>

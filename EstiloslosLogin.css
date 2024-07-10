@@ -1,0 +1,250 @@
+
+body{
+    
+    color: #707070;
+    margin: 0;
+    display: flex;
+    min-height: 100vh; 
+    
+}
+
+.body::-webkit-scrollbar{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: rgb(90, 90, 90) rgb(228, 12, 12);
+}
+.Container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+
+/*-------------------------------certificado------------------------------------------------------------*/
+
+.Certifi{    
+    background-size:100%;
+    /*background-image: url(https://i.postimg.cc/8zb1qFRF/empresa-certificada.png); */ 
+    /* background-image: url(empresa_certificada3.png); */
+    width: 100%;  
+    /* margin-top: -80px;   */
+}
+
+.sost{
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 2.700rem;
+    color: #3a3939;
+    /*border: #0c0a0a solid 5px;*/
+    position: relative;
+    text-align: justify;
+    width: auto;
+    height: 100%;
+    margin-top: 0%;
+   
+}
+
+/* .sost p{
+    margin: 0%;
+} */
+
+.imagenfondo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0.99 , 1.1);
+}
+
+.Banca_libre {
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 10%;
+    text-shadow: 0px 0px 9px #fff;
+}
+
+.Banca_libre_text {
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 15% 5% 80%;
+    align-items: center;
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 0.50cm;
+    margin-left: 10%;
+    margin-top: 105%;
+    background-color: gainsboro; 
+    height: 17%;
+    width: 80%;
+}
+
+.textbox_img{
+    margin-left:40%
+}
+.textcerti{
+    margin-right: 10%;
+    text-align: left;
+}
+/*-------------------------------------------------------------formulario-----------------------------------*/
+.form {
+    /* padding: 22.5%; */
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 11%;
+    align-items: center;
+    align-content: center;
+}
+
+.boxform{
+    display:grid;
+}
+
+.formLogin{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.icon{
+    width: 270px;
+    height: 49.5px;
+}
+.boxform b{
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 2.100rem;
+    color: #3a3939;
+    margin-top: 60px;
+    
+}
+
+.formLogin p{
+    font-size: 1rem;
+    color: #343434;
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    margin-top: 10%;
+}
+
+.textbox {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    border-bottom: 1px solid #c0bebe;
+    width: 100%; /* Asegurar que el contenedor se ajuste al 100% del ancho disponible */
+    padding: 2% 0;
+    opacity: .5;
+}
+
+    .textbox input {
+        background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/user.svg');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 18px;
+        width: max-content; /* Asegurar que el input ocupe el 100% del espacio disponible */
+        font-size: 17px;
+        padding-left: 30px; /* Ajustar padding para que haya espacio para la imagen */
+        outline: none; /* Para quitar el borde cuando el input está inactivo */
+        color: black; /* Texto negro por defecto */
+        transition: all 0.3s ease; /* Para suavizar las transiciones */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+        border: none;
+    }
+
+        .textbox input:focus {
+            outline: none; /* Para quitar el borde cuando el input está enfocado */
+            box-shadow: none; /* Para quitar cualquier sombra que pueda aparecer */
+            color: black; /* Asegurarse de que el texto sea negro cuando está enfocado */
+        }
+
+    .textbox:focus-within {
+        border-bottom: 1px solid black; /* Cambia el borde inferior a negro cuando el input está enfocado */
+        opacity: 1; /* Para hacer que el contenedor sea completamente opaco cuando está enfocado */
+    }
+
+/*----------------------------------------opciones-------------------------------*/
+.ButtonForgotU{
+    width: 100%;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.OTU{
+    font-weight: 500;
+    color: #343434;
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+}
+
+.ButtonForgotP{
+    width: 100%;
+    align-items: center;
+}
+
+.Go{
+    padding: 12px 25px;
+    margin-top: 10%;
+    background-color: #f58aa5;
+    border-radius: 290px;
+    text-align: center;
+}
+
+#Go.active {
+    background-color: #f13363; /* Color del div cuando el input no está vacío */
+}
+
+.buttongo{
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight:550;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.regist{
+    padding: 12px 25px;
+    margin-top: 3%;
+    background-color: #fdfdfd;
+    border: solid 1px #f13363;
+    border-radius: 290px;
+    text-align: center;
+}
+
+.registrarme{
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight:550;
+    font-size: 16px;
+    color: #f13363;
+    text-decoration: none;
+}
+
+.ButtonForgotP{
+    width: 100%;
+    height: 50px;
+    padding-top: 22px;
+    text-align: center;
+    justify-content: center;
+}
+
+.OTC{
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight: 500;
+    color: #343434;
+}
+
+
+
+/*----------------------------foother---------------------------------------------------*/
+footer{
+    position: absolute;
+    align-items: flex-end;
+    background-color: rgb(47, 218, 24);
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .Certifi{
+        display:none;
+    } 
+    
+    .Container{
+        grid-template-columns: 100%;
+    }
+    
+}

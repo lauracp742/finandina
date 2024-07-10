@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca Virtual | Banco Finandina</title>
+    <link rel="stylesheet" type="text/css" href="EstilosLogin2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="Container">
+        <div class="Certifi">
+            <div class="sost">
+                <div class="ImagenIzquierda">
+                    <img class="imagenfondo" src="empresa_certificada3.png" alt="">
+                    <img class="imagenfondo" src="https://transacciones.bancofinandina.com/RS/images/account/onboarding/Login/banner_empresa-B.png" alt="">
+                    <div class="Banca_libre">
+                        <p class="textimg">Una banca libre <br><b>y sostenible</b></p>
+                    </div>
+                    <div class="Banca_libre_text">
+                        <div class="textbox_img">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div></div>
+                        <p class="textcerti">
+                            Disfruta la libertad financiera desde la comodidad de tu casa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalReconoceImagen" id="modalReconoceImagen">
+            <div class="form">
+                <div class="boxform">
+                    <img class="icon" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_logos/banco-finandina.svg"
+                         alt="Icono finandina">
+                    <b>Inicia sesion</b>
+                    <div class="formLogin">
+                        <div class="user">
+                            <label class="laura2024">laura2024</label>
+                        </div>
+                        <div class="textseguridad">
+                            <p class="textseguridadh">Confirmando estos datos que solo tú reconoces, te aseguras de ingresar al canal de manera segura</p>
+                        </div>
+                        <div class="imagenseguridad" type="checkbox" id="imagenseguridad">
+                            <div class="modals" id="modals">
+                                <div class="modal2">
+                                    <input class="reconocedatos" id="reconocedatos" type="radio">
+                                    <div>
+                                        <label>Reconozco estos datos</label>
+                                        <br>
+                                        <label class="palabracla">Palabra clave</label>
+                                    </div>
+                                    <div class="candadito" id="candadito"></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="foto" id="foto">
+                                <img src="#" alt="">
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <input class="insContrase" id="insContrase" type="password" placeholder="Ingresa tu contraseña" disabled>
+                            <div class="ojo" id="ojo"></div>
+                        </div>
+                        <!-------------------------------------------links------------------------------------------------>
+                        <div class="ButtonForgotU">
+                            <a href="olvido_contrase.html" class="OTU">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="Go" id="Go" disable for="buttongo1">
+                            <a href="#" class="buttongo1" id="buttongo1" >Continuar</a>
+                        </div>
+                        <div class="regist">
+                            <a href="#" class="registrarme">Registrarme ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // modal recupera conraseña 1 --------------------------
+    $('#modRecuperacontra').hide();
+
+
+
+    $(document).ready(function () {
+
+        //---------------------------------------------------- CAMBIA ESTILOS Y ACTIVA INPUT CONTRASEÑA---------------------------------
+      
+        $('.imagenseguridad').click(function (event) {
+            var clickedElement = $(event.target);
+            var checkbox = $('#reconocedatos');
+
+            // Verificar si se hizo clic en #reconocedatos o en cualquier parte de imagenseguridad
+            if (clickedElement.is('#reconocedatos') || clickedElement.closest('.imagenseguridad').length > 0) {
+                // Alternar el estado del checkbox y aplicar clases activas
+                if (checkbox.prop('checked')) {
+                    checkbox.prop('checked', false);
+                    $('#insContrase').prop('disabled', true).removeClass('imgReconocida');
+                } else {
+                    checkbox.prop('checked', true);
+                    $('#insContrase').prop('disabled', false).addClass('imgReconocida');
+                }
+
+                // Alternar clases activas en elementos relacionados
+                $(this).find('.modals, #candadito, #foto').toggleClass('active');
+
+                // Agregar clase al div Go y activar el botón
+                $('#Go').addClass('active');
+                $('#buttongo1').on('click', function (event) {
+                    console.log('llega');
+                    let input = $('#insContrase').val().trim();
+                    if (input !== 'colombia') {
+                        alert('La clave que debe ingresar es: colombia');
+                    } else {
+                        alert('Hagamos una señal de que ya ingresó al sistema');
+                    }
+                });
+            } else {
+                $('#reconocedatos').prop('checked', false);
+                $('#insContrase').prop('disabled', true).removeClass('imgReconocida');
+                $('.modals, #candadito, #foto').removeClass('active');
+
+                // Quitar clase del div Go y desactivar el botón
+                $('#Go').removeClass('active');
+            }
+        });
+
+
+        // muestra contraseña(click ojo )----------------------------------------------------------------
+        $('.ojo').click(function () {
+            let input = $('#insContrase');
+            if (input.prop('type') === 'password') {
+                input.prop('type', 'text');  // Cambia el tipo a text
+                $(this).addClass('activado');  // Cambia el ícono del ojo a cerrado
+            } else {
+                input.prop('type', 'password');  // Cambia el tipo a password
+                $(this).removeClass('activado');  // Cambia el ícono del ojo a abierto
+            }
+        });
+
+
+        //-------------------------------------------------------------------------------------------------------------------------------------
+        //---------------FUNCIONES RECUPERAR CONTRASEÑA----------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------------------------------
+
+
+        //----------------activa boton Go1-------------------------------------------------------------------
+
+        //--- cambia estilo para cuando activa select----------------------------------------------------
+        $('#miSelect').focus(function () {
+            $(this).closest('.select-container').addClass('active');
+            $('#usericon').addClass('active');
+        }).blur(function () {
+            $(this).closest('.select-container').removeClass('active');
+            $('#usericon').removeClass('active');
+        });
+
+
+        //------- abilita boton go recuperar contraseña---------------------------------------------------//
+        function checkInput() {
+
+            if ($('#miSelect').val().trim() !== '' && $('#Cc').val().trim() !== '') {
+                // Añadir la clase "active" si el input no está vacío
+                $('#Go1').addClass('active');
+                $('#buttongo').addClass('active');
+                $('#Go1').prop('disabled', false);
+            } else {
+                // Quitar la clase "active" si el input está vacío
+                $('#Go1').removeClass('active');
+                $('#buttongo').removeClass('active');
+            }
+        }
+        $('#miSelect').on('input', checkInput);
+        $('#Cc').on('input', checkInput);
+        checkInput();
+
+
+        //------------------------- boton go recuperar contraseña----------------------------------------------//
+        $('.buttongo').click(function () {
+            let documento = $('#miSelect').val();
+            let numerodoc = $('#Cc').val();
+
+            if (documento !== '' && numerodoc !== '') {
+                alert('Agregamos el siguiente modal');
+            } else {
+                alert('Debe seleccionar un tipo de identificación e ingresar un número de documento');
+            }
+        });
+    });
+
+</script>
+
+
+</body>
+
+<!--<footer>
+    <p>this is the foother</p>
+</footer>-->
+</html>

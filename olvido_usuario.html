@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca Virtual | Banco Finandina</title>
+    <link rel="stylesheet" type="text/css" href="olvido_usuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="Container">
+        <div class="Certifi">
+            <div class="sost">
+                <div class="ImagenIzquierda">
+                    <img class="imagenfondo" src="empresa_certificada3.png" alt="">
+                    <img class="imagenfondo" src="https://transacciones.bancofinandina.com/RS/images/account/onboarding/Login/banner_empresa-B.png" alt="">
+                    <div class="Banca_libre">
+                        <p class="textimg">¿Olvidaste tus datos?</p><b class="textimg1">!Déjanos ayudarte!</b>
+                    </div>
+                    <div class="Banca_libre_text">
+                        <div class="textbox_img">
+                            <!--<i class="fas fa-home"></i>-->
+                            <img class="icono1" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/check-security_black.svg">
+                        </div>
+                        <div></div>
+                        <p class="textcerti">
+                            Por tu seguridad vamos a solicitar unos datos antes de continuar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!--//-------------------------------------------------------------------------------------------------------------------------------------
+        //---------------MODAL RECUPERAR CONTRASEÑA------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="modRecuperacontra" id="modRecuperacontra">
+            <div class="form">
+                <div class="boxform">
+                    <img class="icon" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_logos/banco-finandina.svg"
+                         alt="Icono finandina">
+                    <b>Inicia sesion</b>
+                    <div class="formLogin">
+                        <div class="textseguridad">
+                            <p class="textseguridadh">Completa los siguientes datos:</p>
+                        </div>
+
+                        <!-----------------------------------------select tipo doc----------------------------------------->
+                        <div class="CcUser" id="CcUser">
+                            <input id="Cc" class="Cc" type="text" placeholder="Ingresa tu numero de identificacion">
+                        </div>
+                        <div class="CcTel" id="CcTel">
+                            <input id="correouser" class="Cc" type="text" placeholder="tu correo electronico">
+                        </div>
+                        <!-------------------------------------------links------------------------------------------------>
+                        <div class="Go1" id="Go1">
+                            <a href="#" class="buttongo" id="buttongo" disabled>Continuar</a>
+                        </div>
+                        <div class="volverbotom">
+                            <a href="login1.html" class="volvertext">Volver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // modal recupera conraseña 1 --------------------------
+
+
+
+    $(document).ready(function () {
+
+        //---------------------------------------------------- CAMBIA ESTILOS Y ACTIVA INPUT CONTRASEÑA---------------------------------
+      
+        $('.imagenseguridad').click(function (event) {
+            var clickedElement = $(event.target);
+            var checkbox = $('#reconocedatos');
+
+            // Verificar si se hizo clic en #reconocedatos o en cualquier parte de imagenseguridad
+            if (clickedElement.is('#reconocedatos') || clickedElement.closest('.imagenseguridad').length > 0) {
+                // Alternar el estado del checkbox y aplicar clases activas
+                if (checkbox.prop('checked')) {
+                    checkbox.prop('checked', false);
+                    $('#insContrase').prop('disabled', true).removeClass('imgReconocida');
+                } else {
+                    checkbox.prop('checked', true);
+                    $('#insContrase').prop('disabled', false).addClass('imgReconocida');
+                }
+
+                // Alternar clases activas en elementos relacionados
+                $(this).find('.modals, #candadito, #foto').toggleClass('active');
+
+                // Agregar clase al div Go y activar el botón
+                $('#Go').addClass('active');
+                $('#buttongo').on('click', function (event) {
+                    let input = $('#insContrase').val().trim();
+                    if (input !== 'colombia') {
+                        alert('La clave que debe ingresar es: colombia');
+                    } else {
+                        alert('Hagamos una señal de que ya ingresó al sistema');
+                    }
+                });
+            } else {
+                $('#reconocedatos').prop('checked', false);
+                $('#insContrase').prop('disabled', true).removeClass('imgReconocida');
+                $('.modals, #candadito, #foto').removeClass('active');
+
+                // Quitar clase del div Go y desactivar el botón
+                $('#Go').removeClass('active');
+            }
+        });
+
+
+        // muestra contraseña(click ojo )----------------------------------------------------------------
+        $('.ojo').click(function () {
+            let input = $('#insContrase');
+            if (input.prop('type') === 'password') {
+                input.prop('type', 'text');  // Cambia el tipo a text
+                $(this).addClass('activado');  // Cambia el ícono del ojo a cerrado
+            } else {
+                input.prop('type', 'password');  // Cambia el tipo a password
+                $(this).removeClass('activado');  // Cambia el ícono del ojo a abierto
+            }
+        });
+    
+
+
+
+
+        //-------------------------------------------------------------------------------------------------------------------------------------
+        //---------------FUNCIONES RECUPERAR CONTRASEÑA----------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------------------------------
+
+
+        //----------------activa boton Go1-------------------------------------------------------------------
+
+        //--- cambia estilo para cuando activa select----------------------------------------------------
+        $('#miSelect').focus(function () {
+            $(this).closest('.select-container').addClass('active');
+            $('#usericon').addClass('active');
+        }).blur(function () {
+            $(this).closest('.select-container').removeClass('active');
+            $('#usericon').removeClass('active');
+        });
+
+
+        //------- abilita boton go recuperar contraseña---------------------------------------------------//
+        function checkInput() {
+
+            if ($('#correouser').val().trim() !== '' && $('#Cc').val().trim() !== '') {
+                // Añadir la clase "active" si el input no está vacío
+                $('#Go1').addClass('active');
+                $('#buttongo').addClass('active');
+                $('#Go1').prop('disabled', false);
+            } else {
+                // Quitar la clase "active" si el input está vacío
+                $('#Go1').removeClass('active');
+                $('#buttongo').removeClass('active');
+            }
+        }
+        $('#correouser').on('input', checkInput);
+        $('#Cc').on('input', checkInput);
+        checkInput();
+
+
+        //------------------------- boton go recuperar contraseña----------------------------------------------//
+        $('.buttongo').click(function () {
+            let documento = $('#miSelect').val();
+            let numerodoc = $('#Cc').val();
+
+            if (documento !== '' && numerodoc !== '') {
+                alert('Agregamos el siguiente modal');
+            } else {
+                alert('Debe seleccionar un tipo de identificación e ingresar un número de documento');
+            }
+        });
+    });
+
+</script>
+
+
+</body>
+
+<!--<footer>
+    <p>this is the foother</p>
+</footer>-->
+</html>

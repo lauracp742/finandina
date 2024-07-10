@@ -1,0 +1,747 @@
+
+body{
+    
+    color: #707070;
+    margin: 0;
+    display: flex;
+    min-height: 100vh; 
+    font-family: Open_Sans_Regular,sans-serif;
+    
+}
+
+.body::-webkit-scrollbar{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: rgb(90, 90, 90) rgb(228, 12, 12);
+}
+
+
+
+.Container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+/*-------------------------------certificado------------------------------------------------------------*/
+.Certifi {
+    background-size: 100%;
+    /*background-image: url(https://i.postimg.cc/8zb1qFRF/empresa-certificada.png); */
+    /* background-image: url(empresa_certificada3.png); */
+    width: 100%;
+    /* margin-top: -80px;   */
+}
+
+.sost {
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 2.700rem;
+    color: #3a3939;
+    /*border: #0c0a0a solid 5px;*/
+    position: relative;
+    text-align: justify;
+    width: auto;
+    height: 100%;
+    margin-top: 0%;
+}
+
+/* .sost p{
+    margin: 0%;
+} */
+
+.imagenfondo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0.99, 0.99);
+}
+
+.Banca_libre {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 10%;
+    text-shadow: 0px 0px 9px #fff;
+}
+
+.Banca_libre_text {
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 15% 5% 80%;
+    align-items: center;
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 0.50cm;
+    margin-left: 10%;
+    margin-top: 100%;
+    background-color: #efeded;
+    height: 13%;
+    width: 80%;
+}
+
+.icono1{
+    width:30px;
+}
+
+.textimg {
+    font-size: 0.70cm;
+    margin-bottom: 0%;
+}
+
+.textimg1 {
+    font-size: 0.90cm;
+    margin-bottom: 0%;
+}
+
+.textbox_img {
+    margin-left: 40%
+}
+
+.textcerti {
+    margin-right: 10%;
+    text-align: left;
+}
+
+
+
+/*-------------------------------------------------------------formulario-----------------------------------*/
+
+.form{
+    padding: 25%;
+    padding-right: 25%;
+    padding-top: 6.5%;
+    align-items: center;
+    align-content: center;  
+}
+
+.boxform{
+    display:grid;
+    width: 460px;
+    height: auto;
+}
+
+.formLogin{
+    width: 100%;
+    padding-bottom: 5%;
+    /*border-bottom: 1px solid #c0bebe;*/
+}
+
+.icon{
+    width: 270px;
+    height: 49.5px;
+}
+.boxform b{
+    font-family: Open_Sans_Regular,sans-serif;
+    font-size: 2.100rem;
+    color: #3a3939;
+    margin-top: 60px;
+    
+}
+
+.usuarioIngresado{
+    margin-top: 20%;
+}
+
+.user{
+    /*display: grid;*/
+    /*border:#e71616 solid 1px;*/
+    height: auto;
+    width: auto;
+    padding: 2% 0;
+    opacity: .5;
+
+}
+
+.user label{
+    background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/user.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 18px;
+    font-family: Open_Sans_Regular,sans-serif;
+    width: 90%;
+    font-size: 15px;
+    border: none;
+    /*border:#e71616 solid 1px;*/
+    display: flex;
+    padding-left: 40px;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+.textseguridadh{
+    margin-top: 22px;
+    color: #343434;
+    text-rendering: optimizeSpeed;
+    font-family: Open_Sans_Regular;
+    font-weight: 400;
+    line-height:1.5em;
+    font-family: Open_Sans_Regular,sans-serif;
+}
+
+
+
+.imagenseguridad{
+    grid-template-columns: 80% 4% 16%;
+    display: grid; 
+    cursor: pointer;
+    height: auto;
+}
+
+.modals {
+    position: relative;
+    width: 100%;
+    border: #eee solid 1px;
+    border-radius: 5px;
+}
+
+.modals.active {
+    border-width: 1px;
+    border-color: #e31952;
+    box-shadow: 0 0 10px rgba(227, 25, 82, .35);
+    border-radius: 5px;
+}
+               
+.modal1{
+    margin-top: 0%;
+    z-index:0;
+    position:absolute;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    border: #eee 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.modal2{
+    z-index:2;
+    margin-top: 0%;
+    position:absolute;
+    grid-template-columns: 10% 80% 10%;
+    display: grid;
+    margin-left: 3%;
+    width: 95%;
+    height: 100%;
+    top: 0%;
+    padding-top: 4.5%;
+}
+
+.reconocedatos{
+    width: 15px;
+    height: 15px;
+    margin-top: 20%;
+ }
+
+
+
+.candadito{
+    width: 25px;
+    height: 25px;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/lock.svg);
+}
+
+.candadito.active {
+    background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/check-circle-stroke_red.svg);
+}
+
+.palabracla{
+    font-weight: 600;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+.foto{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABfCAYAAACOTBv1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABuhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTQtMDgtMDRUMTA6MjU6MDktMDU6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTQtMDgtMDRUMTE6MTk6MjktMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE0LTA4LTA0VDExOjE5OjI5LTA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxQ0FBQjk5NzFCRjMxMUU0QTY5M0VDMjI4RkUxMjI1RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxQ0FBQjk5ODFCRjMxMUU0QTY5M0VDMjI4RkUxMjI1RCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjY3NDk1MzdFRUIxQkU0MTE4NDhCRkMzQTY3ODhEOTQzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzQ5NTM3RUVCMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIgc3RFdnQ6d2hlbj0iMjAxNC0wOC0wNFQxMDoyNTowOS0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjY4NDk1MzdFRUIxQkU0MTE4NDhCRkMzQTY3ODhEOTQzIiBzdEV2dDp3aGVuPSIyMDE0LTA4LTA0VDEwOjI1OjU1LTA1OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MjI3MjIyQjVFRjFCRTQxMTg0OEJGQzNBNjc4OEQ5NDMiIHN0RXZ0OndoZW49IjIwMTQtMDgtMDRUMTE6MDE6NTItMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMjcyMjJCNUVGMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzQ5NTM3RUVCMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIvPiA8L3JkZjpEZXNjcmlwdGlv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);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: 53%;
+    border: #eee solid 1px;
+    border-radius: 5px;
+    height: 65px;
+
+}
+
+.foto.active {
+    border-width: 1px;
+    border-color: #e31952;
+    box-shadow: 0 0 10px rgba(227, 25, 82, .35);
+    border-radius: 5px;
+}
+
+.rosa{
+    
+    grid-template-columns: 80% 4% 16%;
+    display: grid; 
+    cursor: pointer;
+    height: auto;
+
+    
+    .modals {
+        position: relative;
+        width: 100%;
+        border: #eee solid 1px;
+        border-radius: 5px;
+    }
+    
+    .modal1{
+        margin-top: 0%;
+        z-index:0;
+        position:absolute;
+        width: 100%;
+        height: 65px;
+        align-items: center;
+        box-shadow: 0 0 20px #ffa4c7;
+        border: #f80462 1px solid;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .modal2{
+        z-index:2;
+        margin-top: 0%;
+        position:absolute;
+        grid-template-columns: 10% 80% 10%;
+        display: grid;
+        margin-left: 3%;
+        width: 95%;
+        height: 100%;
+        top: 0%;
+        padding-top: 4.5%;
+    }
+    
+    .reconocedatos{
+        width: 15px;
+        height: 15px;
+        margin-top: 20%;
+        border-color: #f80462;
+        accent-color:#f80462 ;
+        
+     }
+    
+    
+    
+    .candadito{
+        width: 25px;
+        height: 25px;
+        margin-top: 10%;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/check-circle-stroke_red.svg);
+    }
+    
+    .palabracla{
+        font-weight: 600;
+        color: black;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .foto{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABfCAYAAACOTBv1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABuhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTQtMDgtMDRUMTA6MjU6MDktMDU6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTQtMDgtMDRUMTE6MTk6MjktMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE0LTA4LTA0VDExOjE5OjI5LTA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxQ0FBQjk5NzFCRjMxMUU0QTY5M0VDMjI4RkUxMjI1RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxQ0FBQjk5ODFCRjMxMUU0QTY5M0VDMjI4RkUxMjI1RCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjY3NDk1MzdFRUIxQkU0MTE4NDhCRkMzQTY3ODhEOTQzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzQ5NTM3RUVCMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIgc3RFdnQ6d2hlbj0iMjAxNC0wOC0wNFQxMDoyNTowOS0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjY4NDk1MzdFRUIxQkU0MTE4NDhCRkMzQTY3ODhEOTQzIiBzdEV2dDp3aGVuPSIyMDE0LTA4LTA0VDEwOjI1OjU1LTA1OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MjI3MjIyQjVFRjFCRTQxMTg0OEJGQzNBNjc4OEQ5NDMiIHN0RXZ0OndoZW49IjIwMTQtMDgtMDRUMTE6MDE6NTItMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMjcyMjJCNUVGMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzQ5NTM3RUVCMUJFNDExODQ4QkZDM0E2Nzg4RDk0MyIvPiA8L3JkZjpEZXNjcmlwdGlv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);
+        background-size: 45px 45px;
+        background-repeat: no-repeat;
+        background-position: 53%;
+        box-shadow: 0 0 20px #ffa4c7;
+        border: #f80462 solid 1px;
+        border-radius: 5px;
+        height: 65px;
+    
+    }
+    
+   
+}
+
+.rosatext{
+    
+        display: grid;
+        grid-template-columns: 95% 1fr;
+        border-bottom: 1px solid #eee;
+        height: auto;
+        width: auto;
+        padding: 2% 0;
+        opacity: .5;
+        margin-top: 7%;
+        cursor: auto;
+    
+    
+    .textbox input{
+        background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/key.svg') ;
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 18px;
+        width: 90%;
+        font-size: 17px;
+        border: none;
+        /*border:#e71616 solid 1px;*/
+        display: flex;
+        padding-left: 40px;
+        align-items: center;
+        cursor: auto;
+    }
+    
+    .textbox input:active{
+        border-color: transparent;
+    }
+
+    .ojo {
+        background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/eye-close.svg);
+        background-repeat: no-repeat;
+        background-position: 20%;
+    }
+    
+    .ojo ng-click{
+        background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/eye-open.svg);
+    }
+    
+}
+
+.textbox{
+    display: grid;
+    grid-template-columns: 95% 1fr;
+    border-bottom: 1px solid #eee;
+    height: auto;
+    width: auto;
+    padding: 2% 0;
+    opacity: .5;
+    margin-top: 7%;
+    cursor: auto;
+}
+
+.insContrase {
+    background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/key.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 18px;
+    width: 90%;
+    font-size: 17px;
+    border: none;
+    /*border:#e71616 solid 1px;*/
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+.imgReconocida {
+    background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/key.svg');
+    cursor: text;
+}
+
+.textbox input:focus {
+    outline: none; /* Para quitar el borde cuando el input está enfocado */
+    box-shadow: none; /* Para quitar cualquier sombra que pueda aparecer */
+    color: black; /* Asegurarse de que el texto sea negro cuando está enfocado */
+}
+
+.ojo {
+    background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/eye-close.svg);
+    background-repeat: no-repeat;
+    background-position: 20%;
+}
+
+.ojo.activado {
+    background-image: url(https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/eye-open.svg);
+}
+
+/*----------------------------------------input cc usurio(recuperar contraseña)-------------------------------*/
+.CcUser {
+    border:none;
+    display: grid;
+    grid-template-columns: 95% 1fr;
+    border-bottom: 1px solid #eee;
+    height: auto;
+    width: 100%;
+    padding: 2% 0;
+    opacity: .5;
+    margin-top: 7%;
+    cursor: auto;
+}
+    .CcUser input {
+        background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/hash.svg');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 17px;
+        width: 100%; /* Asegurar que el input ocupe el 100% del espacio disponible */
+        font-size: 17px;
+        padding-left: 40px; /* Ajustar padding para que haya espacio para la imagen */
+        outline: none; /* Para quitar el borde cuando el input está inactivo */
+        color: black; /* Texto negro por defecto */
+        transition: all 0.3s ease; /* Para suavizar las transiciones */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+        border: none;
+    }
+.CcUser input::placeholder {
+    width: 280px;    
+}
+
+.CcUser input:focus {
+    outline: none; /* Para quitar el borde cuando el input está enfocado */
+    box-shadow: none; /* Para quitar cualquier sombra que pueda aparecer */
+    color: black; /* Asegurarse de que el texto sea negro cuando está enfocado */
+}
+
+.CcUser:focus-within {
+    border-bottom: 1px solid black; /* Cambia el borde inferior a negro cuando el input está enfocado */
+    opacity: 1; /* Para hacer que el contenedor sea completamente opaco cuando está enfocado */
+}
+
+
+/*----------------------------------------input telefono usurio(recuperar usuario)-------------------------------*/
+.CcTel {
+    border: none;
+    display: grid;
+    grid-template-columns: 95% 1fr;
+    border-bottom: 1px solid #eee;
+    height: auto;
+    width: 100%;
+    padding: 2% 0;
+    opacity: .5;
+    margin-top: 7%;
+    cursor: auto;
+}
+
+    .CcTel input {
+        background-image: url('https://transacciones.bancofinandina.com/RS//images/account/onboarding/_icons/airplane.svg');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 17px;
+        width: 100%; /* Asegurar que el input ocupe el 100% del espacio disponible */
+        font-size: 17px;
+        padding-left: 40px; /* Ajustar padding para que haya espacio para la imagen */
+        outline: none; /* Para quitar el borde cuando el input está inactivo */
+        color: black; /* Texto negro por defecto */
+        transition: all 0.3s ease; /* Para suavizar las transiciones */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+        border: none;
+    }
+
+        .CcTel input::placeholder {
+            width: 280px;
+        }
+
+        .CcTel input:focus {
+            outline: none; /* Para quitar el borde cuando el input está enfocado */
+            box-shadow: none; /* Para quitar cualquier sombra que pueda aparecer */
+            color: black; /* Asegurarse de que el texto sea negro cuando está enfocado */
+        }
+
+    .CcTel:focus-within {
+        border-bottom: 1px solid black; /* Cambia el borde inferior a negro cuando el input está enfocado */
+        opacity: 1; /* Para hacer que el contenedor sea completamente opaco cuando está enfocado */
+    }
+/*----------------------------------------opciones-------------------------------*/
+.ButtonForgotU{
+    width: 100%;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.OTU{
+    font-weight: 500;
+    color: #343434;
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+}
+
+.ButtonForgotP{
+    width: 100%;
+    align-items: center;
+}
+
+.Go {
+    padding: 12px 25px;
+    margin-top: 10%;
+    background-color: #f58aa5;
+    border-radius: 290px;
+    text-align: center;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+#Go.active {
+    background-color: #f13363; /* Color del div cuando el input no está vacío */
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.Go1 {
+    padding: 12px 25px;
+    margin-top: 10%;
+    background-color: #f58aa5;
+    border-radius: 290px;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+
+#Go1.active {
+    background-color: #f13363; /* Color del div cuando el input no está vacío */
+    cursor: pointer;
+}
+
+.buttongo {
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.buttongo.active {
+    cursor: pointer;
+}
+
+.buttongo1 {
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.regist{
+    padding: 12px 25px;
+    margin-top: 3%;
+    background-color: #fdfdfd;
+    border: solid 1px #f13363;
+    border-radius: 290px;
+    text-align: center;
+}
+
+.volverbotom {
+    padding: 12px 25px;
+    margin-top: 3%;
+    background-color: #fdfdfd;
+    border: solid 1px #6D6D6D;
+    border-radius: 290px;
+    text-align: center;
+}
+
+.registrarme{
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight:550;
+    font-size: 16px;
+    color: #f13363;
+    text-decoration: none;
+}
+
+.volvertext {
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    color: #404040;
+    text-decoration: none;
+}
+
+.ButtonForgotP{
+    width: 100%;
+    height: 50px;
+    padding-top: 22px;
+    text-align: center;
+    justify-content: center;
+}
+
+.OTC{
+    font-family: Open_Sans_Semi_Bold,sans-serif;
+    font-weight: 500;
+    color: #343434;
+}
+
+
+
+/*----------------------------foother---------------------------------------------------*/
+footer{
+    position: absolute;
+    align-items: flex-end;
+    background-color: rgb(47, 218, 24);
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .Certifi{
+        display:none;
+    } 
+    
+    .Container{
+        grid-template-columns: 100%;
+    }
+    
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------  ESTILOS MODAL 2 (RECUPERA USUARIO) --------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.usericon {
+    width: 15px;
+    height: 15px;
+    margin-left: 30%;
+/*    filter: invert(1) grayscale(1) brightness(50%);*/
+    opacity: .5;
+}
+
+.usericon.active {
+    width: 15px;
+    height: 15px;
+    margin-left: 30%;
+    /*    filter: invert(1) grayscale(1) brightness(50%);*/
+    opacity: 1;
+}
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    border-bottom: 1px solid #eee; /* Borde inferior */
+}
+
+.select-container.active {
+    border-bottom: 1px solid black; /* Borde inferior */
+}
+
+
+
+    .select-container select {
+        margin-left: 0%;
+        width: 100%;
+        padding: 10px 30px 10px 20px; /* Espacio para el ícono */
+        font-size: 17px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 18px;
+        background-color: transparent;
+        color: #B4B4B4; /* Color del texto */
+        appearance: none; /* Oculta el selector predeterminado */
+        z-index: 1; /* Asegura que el select esté sobre el ícono */
+    }
+
+.select-container .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Permite hacer clic en el select sin interferencias del ícono */
+    color: black; /* Color del ícono */
+}
+
+.select-container select:focus {
+    outline: none; /* Quita el contorno predeterminado al hacer foco */
+   /* border-bottom: 1px solid black;*/ /* Cambia el color del borde inferior al hacer foco */
+}
+
+/* Estilo adicional para el select cuando no hay opciones seleccionadas */
+.select-container select option:first-child {
+    color: #999; /* Color del texto de la opción predeterminada */
+}
+

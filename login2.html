@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Usuario\Desktop\F\EstiloslosLogin2.css">
+    <link rel="stylesheet" type="text/js" href="C:\Users\User\Desktop\F\login.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="Certifi">
+            <div class="sost">
+                <div class="ImagenIzquierda">
+                    <!--<img class="imagenfondo" src="empresa_certificada3.png" alt="">-->
+                    <!--<img class="imagenfondo" src="https://transacciones.bancofinandina.com/RS/images/account/onboarding/Login/banner_empresa-B.png" alt="">-->
+                    <div class="Banca_libre">
+                        <p class="textimg">Una banca libre <br><b>y sostenible</b></p>
+                    </div>
+                    <div class="Banca_libre_text">
+                        <div class="textbox_img">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div></div>
+                        <p class="textcerti">
+                            Disfruta la libertad financiera desde la comodidad de tu casa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ModalUserNom" class="ModalUserNom">
+            <div class="form">
+                <div class="boxform">
+                    <img class="icon" src="https://transacciones.bancofinandina.com/RS//images/account/onboarding/_logos/banco-finandina.svg"
+                         alt="Icono finandina">
+                    <b>Inicia sesion</b>
+                    <div class="formLogin">
+                        <div class="user">
+                            <label class="usuarioIngresado">usuarioIngresado</label>
+                        </div>
+                        <div class="textseguridad">
+                            <p class="textseguridadh">Confirmando estos datos que solo tú reconoces, te aseguras de ingresar al canal de manera segura</p>
+                        </div>
+
+                        <div class="imagenseguridad" id="imagendeseguridad" type="checkbox" id="reconocedatos" onclick="reconoce()">
+                            <div class="modals">
+                                <input type="button" class="modal1" for="reconocedatos">
+                                <br>
+                                <div class="modal2">
+                                    <input class="reconocedatos" id="reconocedatos" type="radio">
+                                    <div>
+                                        <label for="reconocedatos">Reconozco estos datos</label>
+                                        <br>
+                                        <label for="reconocedatos" class="palabracla">Palabra clave</label>
+                                    </div>
+                                    <div class="candadito"></div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="foto" id="foto">
+                                <img src="#" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="textbox">
+
+                            <input type="password" placeholder="Ingresa tu contraseña">
+                            <div class="ojo"></div>
+
+                        </div>
+
+                        <!-------------------------------------------links------------------------------------------------>
+                        <div class="ButtonForgotU">
+                            <a href="#" class="OTU">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="Go">
+                            <a href="#" class="buttongo">Continuar</a>
+                        </div>
+                        <div class="regist">
+                            <a href="#" class="registrarme">Registrarme ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>//----------------------------------------------------------------FUNCIONES----------------------------------------------------
+
+    $(document).ready(function () {
+        // Función que se llama cada vez que cambia el valor del input
+        function checkInput() {
+            console.log('llega aqui');
+
+            if ($('#NomUser').val().trim() !== '') {
+                // Añadir la clase "active" si el input no está vacío
+                $('#Go').addClass('active');
+            } else {
+                // Quitar la clase "active" si el input está vacío
+                $('#Go').removeClass('active');
+            }
+        }
+        $('#NomUser').on('input', checkInput);
+        checkInput();
+
+        $('#buttongo').click(function () {
+            if ($('#NomUser').val() !== "laura2024") {
+                alert('Debe ingresar usuaruo "laura2024" ');
+            } else {
+                alert('Debe cambiar modal');
+                //modal.style.display = "none";
+                window.location.href = "login2ImgCont.html"; // Cambia la URL a donde quieras redirigir
+            }
+        });
+    });
+</script>
+
+</body>
+
+<!--<footer>
+    <p>this is the foother</p>
+</footer>-->
+</html>
